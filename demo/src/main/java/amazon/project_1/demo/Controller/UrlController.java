@@ -16,7 +16,7 @@ public class UrlController {
     public UrlController(UrlService urlService) {
         this.urlService = urlService;
     }
-//
+
     @PostMapping("/shorten")
     public String shortenUrl(@RequestBody UrlEntity longUrl) {
         l.info(longUrl.getLongUrl());
